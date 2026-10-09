@@ -1,0 +1,21 @@
+{
+  "schema_version": "polarist-unseen-v1",
+  "inference_bundle_url": null,
+  "checkpoint": "models/baseline1_step216_reference_state.pt",
+  "checkpoint_bytes": 33403057,
+  "checkpoint_sha256": "1f84c27a92a9dc15c3e7df0ed4b21042bf48f78caf825c6c5f55f60fefc87503",
+  "graph": "unseen_graph_v1.npz",
+  "graph_bytes": 3371977,
+  "graph_sha256": "c6e94521a44a1ff15f398ad2d1a40c79b93413f0ff7584ba3fe0d2b5e13ecb01",
+  "graph_nodes": 16073,
+  "graph_edges": 795004,
+  "official_unseen_candidates": 15963,
+  "shared_edge_order": "sorted_then_numpy_default_rng_seed_2",
+  "hub_beta": 2.0,
+  "tf_numerical_tie_tolerance": 5e-7,
+  "tf_list": "Human_tf_list.txt",
+  "tf_list_entries": 1639,
+  "tf_genes_in_official_unseen_candidates": 1248,
+  "tf_list_sha256": "387c8ff07c715c5dc2a136a5b488d6998929d4cc68d619fdcba27a981941bab7",
+  "training_perturbation_type": "Gain"
+}

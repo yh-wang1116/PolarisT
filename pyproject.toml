@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "polarist"
+version = "1.0.0"
+description = "Phenotype-guided T-cell perturbation and unseen-driver ranking"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "anndata>=0.10,<0.13",
+  "jupyter>=1.0,<2",
+  "matplotlib>=3.7,<4",
+  "numba>=0.59,<1",
+  "numpy>=1.24,<3",
+  "pandas>=2.0,<3",
+  "scanpy>=1.10,<2",
+  "scikit-learn>=1.3,<2",
+  "scipy>=1.10,<2",
+  "seaborn>=0.12,<1",
+  "torch==2.4.1",
+  "torch-geometric==2.6.1",
+  "tqdm>=4.65,<5",
+]
+
+[project.optional-dependencies]
+demo = [
+  "ipykernel>=6,<7",
+  "nbconvert>=7.10,<8",
+  "nbformat>=5.9,<6",
+]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.6,<1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/polarist"]
+
+[tool.hatch.build]
+exclude = [
+  "/.venv",
+  "/build",
+  "/dist",
+  "/outputs",
+  "/temp",
+  "**/__pycache__",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "phenotype_driver_prediction/tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+exclude = ["*.ipynb"]

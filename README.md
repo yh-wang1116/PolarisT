@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/DELTA-TJ-submission/PolarisT/blob/main/PolarisT_icon.png">
+  <a href="https://github.com/org-PolarisT/PolarisT/blob/main/PolarisT_icon.png">
     <img width="150" alt="PolarisT" src="./PolarisT_icon.png" />
   </a>
 </p>
@@ -56,7 +56,7 @@ PolarisT requires Python 3.10, 3.11 or 3.12. Create a conda environment and inst
 ```bash
 conda create -n polarist python=3.10
 conda activate polarist
-git clone https://github.com/DELTA-TJ-submission/PolarisT.git
+git clone https://github.com/org-PolarisT/PolarisT.git
 cd PolarisT
 pip install .
 ```
